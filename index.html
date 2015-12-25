@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Itch</title>
+
+<link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+<link href="vendor/jquery-layout/layout-default-latest.css" rel="stylesheet">
+
+<style>
+.ui-layout-west  {
+    padding: 0;
+}
+</style>
+</head>
+
+<body>
+<div class="ui-layout-center">Center</div>
+<div class="ui-layout-north">North</div>
+<div class="ui-layout-south">South</div>
+<div class="ui-layout-east">East</div>
+<div class="ui-layout-west">
+    <div class="layout-stage">Stage</div>
+    <div class="layout-sprite">Sprite</div>
+</div>
+
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="vendor/jquery-layout/jquery.layout-1.4.4.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('body').layout({
+        applyDefaultStyles: true,
+        west__applyDefaultStyles: false,
+        west__minSize: 500,
+        east__size: window.innerWidth - 720,
+        west__childOptions: {
+            north__paneSelector: '.layout-stage',
+            center__paneSelector: '.layout-sprite',
+            north__minSize: 400
+        }
+    });
+});
+</script>
+
+</body>
+</html>
