@@ -5,7 +5,7 @@
 <title>Itch</title>
 
 <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
-<link href="vendor/jquery-layout/layout-default-latest.css" rel="stylesheet">
+<link href="vendor/jquery-layout/layout-default.css" rel="stylesheet">
 
 <style>
 .ui-layout-west  {
@@ -28,6 +28,7 @@
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <script src="vendor/jquery-layout/jquery.layout-1.4.4.js"></script>
+<script src="js/project.js"></script>
 
 <script>
 $(document).ready(function() {
@@ -42,6 +43,8 @@ $(document).ready(function() {
             north__minSize: 400
         }
     });
+
+    Project.init();
 });
 </script>
 

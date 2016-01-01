@@ -1,0 +1,9 @@
+[
+{
+    "name": "Cat",
+    "images": [ "cat-1.svg", "cat-2.svg" ],
+    "sounds": [ "meow.mp3" ],
+    "text": []
+}
+
+]
